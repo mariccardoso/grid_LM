@@ -1,0 +1,56 @@
+/* Atividade de grid basico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Grid container */
+
+.tudo {
+    height: 100vh;
+    color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "section aside"
+        "article aside"
+        "footer footer";
+}
+
+/* Grid items */
+
+.tudo header {
+    grid-area: header;
+    background-color: #4458b1;
+}
+
+.tudo nav {
+    grid-area: navbar;
+    background-color: #2abdbd;
+}
+
+.tudo section {
+    grid-area: section;
+    background-color: #f0cb2a;
+}
+
+.tudo article {
+    grid-area: article;
+    background-color: #f1711b;
+}
+
+.tudo aside {
+    grid-area: aside;
+    background-color: #f1f1f1;
+}
+
+.tudo footer {
+    grid-area: footer;
+    background-color: #3d56e0;
+    text-align: center;
+}
+
+
